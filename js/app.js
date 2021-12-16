@@ -216,7 +216,7 @@ console.log("STAG -" + stag);
 
 
 $('.btn-2').click(function(){     
-    window.location.href = 'https://www.casinokakadu.com/users/sign_up' + stag;
+    window.location.href = 'https://www.casinokakadu.com/no/users/sign_up' + stag;
 })
 
 
