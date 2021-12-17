@@ -545,6 +545,7 @@
   }
   
   .btn {
+      text-align: center;
       font-weight: 600;
   }
   
@@ -798,6 +799,11 @@
   }
   #click {
       top:49%;
+  }
+
+  .text1,
+  .text2 {
+      font-size: 18px;
   }
   
   }
