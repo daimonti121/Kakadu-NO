@@ -757,8 +757,7 @@
   }
   
   .kakadu {
-      min-width: inherit;
-      max-width: 180px;
+      display: none;
   }
   
   
@@ -770,7 +769,7 @@
   .circle {
     transform: scale(0.75);
     position: relative;
-    top: -12%;
+    top: -18%;
   }
   .volna {
       top: 73%;
@@ -784,11 +783,6 @@
   
   .logo {
       margin-bottom: 27vh;
-  }
-  
-  .kakadu {
-      top: 15vh;
-      left: 24vw;
   }
   .logo img {
       width: 180px;
@@ -950,12 +944,4 @@
       transform: scale(0.45);
     }
   
-    .logo {
-      top: -39px;
-      left: 172px;
-   }
-  }
-  
-  .no-click{
-    pointer-events: none;
-  }
+   
