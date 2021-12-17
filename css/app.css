@@ -806,13 +806,13 @@
   .circle {
     transform: scale(0.7);
     position: relative;
-    top: -12%;
+    top: -20%;
   }
   #click {
       top: 41%;
   }
   .logo img {
-      width: 120px;
+      width: 180px;
   }
   .logo {
       left: -8px;
