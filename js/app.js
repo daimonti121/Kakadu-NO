@@ -2,7 +2,7 @@ window.HUB_EVENTS={ASSET_ADDED:"ASSET_ADDED",ASSET_DELETED:"ASSET_DELETED",ASSET
 
 var colors = ["#A109FF", "#FD372A", "#FED022", "#00C3E6",
              "#A109FF", "#FD372A", "#FED022", "#00C3E6"];
-var prizes = ["TRY AGAIN", "100% opptil 2000 KR", "75 FS", "100 FS", "NO WIN", " 50% opptil  1000 KR", "20 FS", " 75% opptil 1000 KR"];
+var prizes = ["PRØV IGJEN", "100% opptil 2000 KR", "75 FS", "100 FS", "NÅ I", " 50% opptil  1000 KR", "20 FS", " 75% opptil 1000 KR"];
 
 var startAngle = 0*Math.PI/180;
 var arc = (2 * Math.PI) / colors.length;
@@ -152,9 +152,9 @@ function drawRouletteWheel() {
 var box = document.querySelector("#click");
    
 function spin() {
-  spinAngleStart = 15;
+  spinAngleStart = 12;
   spinTime = 0;
-  spinTimeTotal = 1700;
+  spinTimeTotal = 1770;
   rotateWheel();
   box.classList.toggle("no-click");
 }
@@ -164,7 +164,7 @@ $('#click').click(function(){
 })
 
 function rotateWheel() {
-  spinTime += 7;
+  spinTime += 10;
   if(spinTime >= spinTimeTotal) {
     stopRotateWheel();
       if($('body').hasClass('one') && !$('body').hasClass('two')) {
@@ -194,7 +194,7 @@ function stopRotateWheel() {
   // clearTimeout(spinTimeout);
   // var degrees = startAngle * 180 / Math.PI + 90;
   var degrees = startAngle * 180 / Math.PI + 90;
-  var arcd = arc * 180 / Math.PI;
+  var arcd = arc * 90 / Math.PI;
   var index = Math.floor((360 - degrees % 360) / arcd);
   ans.textContent = prizes[index];
   box.classList.toggle("no-click");

@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAKADU</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fancybox.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -26,11 +19,11 @@
         <input type="button" id="click" value="spin" style="float:left;" onclick="spin();" />
         <div class="bg">
             <div class="monetki-left">
-                <img src="img/monetki-r-l.svg" alt="" class="mon-l">
-                <img src="img/monetki-r-l.svg" alt="" class="mon-r">
-                <img src="img/monetki-b.svg" alt="" class="mon-b">
-                <img src="img/monetki-r-t.svg" alt="" class="mon-r-t">
-                <img src="img/monetki-c-t.svg" alt="" class="c-t">
+                <img src="img/monetki-r-l.svg" alt="monetki" class="mon-l">
+                <img src="img/monetki-r-l.svg" alt="monetki" class="mon-r">
+                <img src="img/monetki-b.svg" alt="monetki" class="mon-b">
+                <img src="img/monetki-r-t.svg" alt="monetki" class="mon-r-t">
+                <img src="img/monetki-c-t.svg" alt="monetki" class="c-t">
             </div>
             <div class="volna">
                 <svg class="editorial"
@@ -58,26 +51,26 @@
         <div class="fon">
             <div class="left">
                 <div class="palma-left">
-                    <img src="img/palma 2.png" alt="">
+                    <img src="img/palma 2.png" alt="palma">
                 </div>
                 <div class="kakadu">
-                    <img src="img/kakadu.png" alt="">
+                    <img src="img/kakadu.png" alt="kakadu">
                 </div>
             </div>
             <div class="center">
                 <a href="#" class="logo">
-                    <img src="img/logo.svg" alt="">
+                    <img src="img/logo.svg" alt="logo">
                 </a>
                 <div class="circle">
                     <div class="circle-1lv">
-                        <img src="img/Group 585.svg" alt="">
+                        <img src="img/Group 585.svg" alt="Group">
                     </div>
                     <div class="circle-2lv">
 
                         <canvas id="canvas" width="500" height="500"></canvas>
-                        <img src="img/Group 586.svg" width="90" height="150" class="none" id="arrow">
+                        <img src="img/Group 586.svg" alt="Group" width="90" height="150" class="none" id="arrow">
                         <div class="centerrr">
-                            <img src="img/Frame.png" width="150" height="150" class="none" id="center-logo">
+                            <img src="img/Frame.png" alt="Frame" width="150" height="150" class="none" id="center-logo">
                         </div>
                         <div id="ans"></div>
                         
@@ -108,31 +101,30 @@
             </div>
             <div class="right">
                 <div class="palma-right">
-                    <img src="img/palma 1.png" alt="">
+                    <img src="img/palma 1.png" alt="palma">
                 </div>
             </div>
         </div>
     </div>
-    <button data-fancybox data-src="#animatedModal" class="none this"></button>
+    <button data-fancybox data-modal="true" data-src="#animatedModal" class="none this"></button>
     <div class="wrapper-popup none" >
         <div id="animatedModal" class="none">
             <div class="text1">Gratulerer!</div>
             <div class="text2">Du vinner <span>100 FS</span>! Du skal få mer!</div>
-            <div class="btn btn-1">Snurre rundt</div>
+            <div class="btn btn-1" data-fancybox-close>Snurre rundt</div>
         </div>
     </div>
-    <button data-fancybox data-src="#animatedModal2" class="none this2"></button>
+    <button data-fancybox data-modal="true" data-src="#animatedModal2" class="none this2"></button>
     <div class="wrapper-popup none">
         <div id="animatedModal2" >
             <div class="popupImg"><img src="img/5.png" alt=""></div>
             <div class="text1">Wow! Din totale bonus er <span>100%</span> opptil <span>2000 KR</span> + <span>100 FS</span>!</div>
             <div class="text2">Ta det nå og la oss fly inn til Kakadu-øya!</div>
-            <div class="btn btn-2">Få bonus</div>
+            <div class="btn btn-2" data-fancybox-close>Få bonus</div>
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
-    <script src="js/app.js?v1.5"></script>
-
+    <script src="js/app.js?v1.7"></script>
 </body>
 </html>
