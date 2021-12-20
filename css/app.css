@@ -797,11 +797,18 @@
       display: none;
   }
   
-  
+  img.mon-r-t {
+      display: none;
+  }
+
+  .logo img {
+      max-width: 260px
+  }
+
   .logo {
       position: relative;
       z-index: 2;
-      top: 0;
+      top: -70px;
   }
   .circle {
     transform: scale(0.75);
@@ -820,10 +827,8 @@
   
   .logo {
       margin-bottom: 27vh;
-  }
-  .logo img {
-      width: 180px;
-  }
+  } 
+
   #click {
       top:41%;
   }
@@ -847,9 +852,6 @@
   }
   #click {
       top: 41%;
-  }
-  .logo img {
-      width: 180px;
   }
   .logo {
       left: -8px;
@@ -905,7 +907,7 @@
     }
 
     .logo {
-        top: 30px;
+        top: -40px;
     }  
 
   }
@@ -935,7 +937,7 @@
       .logo {
         position: absolute;
         width: 200px;
-        top: -20px;
+        top: -50px;
         left: 192px;
       }
   
@@ -949,10 +951,8 @@
           display: none;
       }
   
-      .logo img {
-          width: 150px;
-      }
-  
+
+   */
       .palma-right img {
           max-width: 51%;
       }
@@ -962,7 +962,11 @@
       }
   
       .kakadu img {
-          width: 60%;
+          width: 70%;
+      }
+
+      img.mon-r-t {
+          display: none;
       }
   }
   
@@ -983,7 +987,7 @@
   
     .logo {
       top: -39px;
-      left: 172px;
+      left: 190px;
     }
   }
   
